@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  background: var(--very-light-gray);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--very-light-gray);
+  font-family: var(--font-family-secondary);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+button {
+  background: var(--very-light-gray);
+  border-radius: 2rem;
+  border: none;
+  padding: 0.85rem 1.5rem;
+  align-self: flex-start;
+  font-weight: bold;
+  border: 1px solid var(--very-light-gray);
+  transition: all 200ms;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+button:hover {
+  background: none;
+  color: var(--very-light-gray);
+  border: 1px solid var(--very-light-gray);
+}
+
+.bg-orange {
+  background: var(--bright-orange);
+}
+
+.bg-cyan {
+  background: var(--dark-cyan);
+}
+
+.bg-dark-cyan {
+  background: var(--very-dark-cyan);
+}
+
+.color-orange {
+  color: var(--bright-orange);
+}
+
+.color-cyan {
+  color: var(--dark-cyan);
+}
+
+.color-dark-cyan {
+  color: var(--very-dark-cyan);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+  --font-family-principal: "Lexend Deca", sans-serif;
+  --font-family-secondary: "Big Shoulders Display", cursive;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+@media (max-width: 650px) {
+  section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: 100%;
+  }
+}
+
+.container {
+  display: flex;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+@media (max-width: 650px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 3rem;
+  max-width: 275px;
+}
+.card img {
+  width: 4rem;
+  margin-bottom: 2rem;
+}
+.card p {
+  color: var(--transparent-white);
+  padding-bottom: 4rem;
+  line-height: 1.5rem;
+  flex-grow: 1;
+  font-size: 0.8rem;
+}
+@media (max-width: 650px) {
+  .card p {
+    padding-bottom: 2rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

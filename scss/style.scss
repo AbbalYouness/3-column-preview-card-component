@@ -1,0 +1,48 @@
+@import "base";
+@import "reset";
+@import "variables";
+@import "mixin";
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  @include xs {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: 100%;
+  }
+}
+
+.container {
+  display: flex;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  @include xs {
+    flex-direction: column;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 3rem;
+  max-width: 275px;
+
+  img {
+    width: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    color: var(--transparent-white);
+    padding-bottom: 4rem;
+    line-height: 1.5rem;
+    flex-grow: 1;
+    font-size: 0.8rem;
+    @include xs {
+      padding-bottom: 2rem;
+    }
+  }
+}
